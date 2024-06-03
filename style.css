@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+}
+.nav-locations{
+    
+    height: 40px;
+}
+.locations{
+    gap: .5rem;
+}
+.locations i{
+    color: white;
+
+}
+.locations p{
+    color: rgba(227, 223, 223, 0.995);
+}
+.icons{
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons a{
+    text-decoration: none;
+    color: white;
+    border-left: 2px solid white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 10px;
+}
+.icons a i{
+   margin-right: .5rem;
+}
+.icons a:first-child{
+    border: none;
+}
+
+.nav-side img{
+    border: 2px solid black;
+    margin-right: 1rem;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+.link-section{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+}
+.link-section a{
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sids{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: flex-start;
+    gap: 10px;
+}
+.sidebar{
+    columns: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    height: 100%;
+    display: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 400px;
+    z-index: 10;
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 12px );
+    -webkit-backdrop-filter: blur( 12px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: black;
+    padding: 15px;
+}
+.sidebar a{
+    margin-left: .8rem;
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar i{
+    font-size: 30px;
+    padding: 10px;
+}
+.sidebar i:hover{
+    color: blue;
+}
+.sidebar .sids a{
+    font-size: 18px;
+}
+.sidebar .sids a:hover{
+    background: gray;
+    border-radius: 8px;
+    width: 100%;
+    padding: 3px 5px;
+} 
+.sidebar .sids .dropdown:hover{
+    background: gray;
+    border-radius: 8px;
+    width: 100%;
+    padding: 3px 5px;
+} 
+.mini-card{
+    height: 150px;
+    width: 150px;
+    color: white;
+    background: white;
+    font-size: 13px;
+    padding: 0;
+    transition: 1s ease;
+   &:hover i{
+    color: white;
+   } 
+}
+.mini-card:hover{
+    background: #16294a;
+    cursor: pointer;
+}
+.mini-card i{
+    margin-top:1.5rem;
+    color: #d82722;
+    font-size: 50px;
+}
+.mini-card button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #16294a;
+    color: white;
+}
+.form-container{
+    height: 400px;
+    color: black;
+    background: white;
+    color: black;
+    border: 2px solid gray;
+    border-radius: 8px;
+}
+.side-cont{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background: rgb(163, 2, 2);
+    /* gap: 2rem; */
+    /* margin-right: 1rem; */
+}
+.side-cont a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    margin-left: 1rem;
+    /* height: 90px; */
+}
+.img-section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: justify;
+    margin-top: .5rem;
+    margin-left: 4rem;
+}   
+.img-section:last-child{
+    margin-bottom: .5rem;
+}
+.img-section p{
+    font-size: 13px;
+}
+.img-section img{
+    height: 100px;
+    width: 100px;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 50%;
+}
+.collage-trusties{
+    background: rgb(186, 37, 37);
+    /* width: 100%; */
+    clip-path: polygon(85% 0, 100% 50%, 85% 100%, 0 100%, 0% 50%, 0 0);
+}
+
+@media (max-width:768px) {
+    .trusties-collage{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .mini-card-section{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .msin-section{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footer{
+        gap: .5rem;
+        margin-bottom: 1rem;
+    }
+    .slider-images{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+    }
+    .link-section .dropdown{
+        display: none;
+    }
+    .link-section a{
+        display: none;
+    }
+    .icons .fa-bars{
+        display: flex !important;
+        color: white;
+        font-size: 24px;
+    }
+    .form-container{
+        margin-top: 1rem;
+    }
+    .location-area{
+        height: 180px;
+    }
+    .nav-locations{
+        display: flex;
+        flex-direction: column;    
+    }
+    .nav-img{
+        margin-bottom: 1rem;
+    }
+    /* .slider-images {
+        height: 400px;
+        width: 400px;
+    } */
+    .trusties-area{
+        gap: 1rem;
+    }
+    .carousel-item img{
+        height: 200px;
+    }
+}
+
+@media (max-width:576px) {
+    .nav-side img{
+        height: 70px;
+        width: 70px;
+    }
+    .location-area{
+        height: 130px;
+    }
+    .regula{
+        margin-top: -20px;
+    }
+    .small-footer{
+        height: 80px;
+        font-size: 12px;
+    }
+    .small-footer .rr{
+        margin-top: 1rem;
+    }
+    .nav-locations{
+        display: flex;
+        flex-direction: column;    
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+    }
+    .locations{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       font-size: 14px;
+    }
+    .icons{
+        font-size: 13px;
+        /* max-width: 100px; */
+        display: flex;
+        justify-content: flex-center;
+    }
+    .sidebar{
+        width: 250px;
+    }
+}
+@media (max-width:992px) {
+    .link-section a{
+        display: none;
+    }
+    .link-section .dropdown{
+        display: none;
+    }
+    .sidebar{
+        width: 250px;
+    }
+    .mini-card-section{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .msin-section{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footer{
+        display: flex;
+        /* flex-direction: column; */
+        gap: .5rem;
+        margin-bottom: 1rem;
+    }
+    .carousel-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+@media (max-width:1200px) {
+    .link-section a{
+        display: none;
+    }
+    .link-section .dropdown{
+        display: none;
+    }
+    .footer{
+        display: flex;
+        /* flex-direction: column; */
+        gap: .5rem;
+        margin-bottom: 1rem;
+    }
+    .mini-card-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+    .mini-card{
+        width: 190px;
+    }
+    .form-container{
+        width: 100%;
+    }
+}
+.content{
+    line-height: 12px;
+}
+.first-slider{
+    padding: .5rem;
+    border: 1px solid rgba(174, 171, 171, 0.535);
+    margin-top: -.5rem;
+    border-top: none;
+}
+.photo-gallery h3{
+    height: 50px;
+    background: #16294a;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1rem;
+}
+.fa-facebook{
+    color: blue;
+}
+.twitter{
+    color: rgb(54, 107, 212);
+}
+.fa-youtube{
+    color: maroon;
+}
+.whatsapp{
+    color: green;
+}
+iframe{
+    height: 200px;
+    width: 350px;
+
+}
+.quick-links{
+    gap: .5rem;
+}
+.quick-links a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+.uper-slider marquee{
+    height: 300px;
+}
+.rr{
+    font-size: 14px;
+}
